@@ -1,0 +1,6 @@
+name: vipname
+main: com.github.startzyp.vipname.main
+version: 1.0
+softdepend: [PlaceholderAPI]
+commands:
+  vipname:
