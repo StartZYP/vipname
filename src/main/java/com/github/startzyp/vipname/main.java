@@ -65,7 +65,9 @@ public class main extends JavaPlugin {
             playerPoints.getAPI().take(player.getUniqueId(),havepoints);
             getConfig().set("vipname."+player.getName(),newname);
             saveConfig();
-            sender.sendMessage("§e§l[Vipname]§a称号修改成功");
+            sender.sendMessage("§e§l[Vipname]§a称号修改成功,已经扣除点券");
+        }else {
+            sender.sendMessage("§e§l[Vipname]§4您的点券不足，请充值");
         }
 
         return super.onCommand(sender, command, label, args);

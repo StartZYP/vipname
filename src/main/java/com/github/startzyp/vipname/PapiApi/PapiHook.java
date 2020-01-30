@@ -40,10 +40,15 @@ public class PapiHook extends PlaceholderExpansion {
         // %example_placeholder1%
         if (identifier.equals("prefix")) {
             String string = main.plugin.getConfig().getString("vipname." + p.getName());
-            if (string.equalsIgnoreCase("")) {
-                return " ";
+            if(string!=null&&string.length() !=0){
+                return string;
             }
-            return string;
+
+            //            if (string.equalsIgnoreCase("")) {
+//
+//            }
+//            return main.plugin.getConfig().getString("vipname."+p.getName());
+            return " ";
         }
 
 

@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'com.github.startzyp.vipname'
-version '2.1-SNAPSHOT'
+version '2.8-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
